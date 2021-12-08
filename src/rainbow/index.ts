@@ -1,10 +1,9 @@
 import p5 from 'p5';
-import { euclidean, manhattan } from '../utils/distance';
+import { euclidean } from '../utils/distance';
 
 export const rainbowSketch = (p: p5) => {
   const WIDTH = 720;
   const HEIGHT = 720;
-  const AREA = WIDTH * HEIGHT;
   const step = 10;
   const centerX = WIDTH >> 1;
   const centerY = HEIGHT >> 1;
