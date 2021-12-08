@@ -1,6 +1,6 @@
 import p5 from 'p5';
 
-export const sketch = (p: p5) => {
+export const noiseSketch = (p: p5) => {
   const WIDTH = 720;
   const HEIGHT = 720;
   let t = 0;
@@ -13,10 +13,10 @@ export const sketch = (p: p5) => {
   p.draw = () => {
     p.stroke(0, 255);
     p.strokeWeight(1);
-    t += 1;
+    t += 0.01;
     const x = p.noise(t) * HEIGHT;
     p.fill(0, 30);
     p.stroke(0, 30);
-    p.circle(t % HEIGHT, x, 10);
+    p.circle((t % HEIGHT) * 10, x, 10);
   };
 };
