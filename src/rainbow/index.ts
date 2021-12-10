@@ -41,6 +41,7 @@ export const rainbowSketch = (p: p5) => {
         );
         // wave
         // p.fill(
+        //   // [0, LOOP] -> [-1, 1] sin for smooth transition -> [0, 100]
         //   Math.sin((loopT / (LOOP >> 1)) * Math.PI + i / (WIDTH >> 2)) * 50 +
         //     50,
         //   100, // 0.6 -> 1
